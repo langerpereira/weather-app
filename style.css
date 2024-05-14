@@ -12,12 +12,37 @@ body{
 }
 
 .weather-app {
-    background-image: url('2.png');
+    background-image: url('2.jpg');
+    background-size :cover;
+    background-color: rgb(247, 247, 247);
     max-width: 800px;
     margin: 50px auto;
     padding: 30px;
     border-radius: 15px;
+    animation: change 25s infinite ease-in-out;
 }
+
+@keyframes change {
+    0%{
+        background-image: url(2.jpg);
+    }
+    20%{
+        background-image: url(3.jpg);
+    }
+   40%{
+        background-image: url(7.jpg);
+    }
+    60%{
+        background-image: url(6.jpg);
+    }
+    80%{
+        background-image: url(4.jpg);
+    }
+    100%{
+        background-image: url(5.jpg);
+    }
+}
+
 
 .search-form {
     display: flex;
