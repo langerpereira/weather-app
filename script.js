@@ -72,3 +72,10 @@ function getWeatherIconName(weatherCondition) {
 
     return iconMap[weatherCondition] || "help";
 }
+
+
+document.querySelector('.dark-mode-toggle').addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    document.querySelector('.weather-app').classList.toggle('dark-mode');
+});
+
